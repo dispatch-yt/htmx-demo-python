@@ -1,0 +1,50 @@
+#book-list-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#book-list-title {
+    color: #333;
+    text-align: center;
+}
+
+#book-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#book-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#book-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#book-info {
+    font-weight: bold;
+}
+
+.author {
+    font-weight: normal;
+}
+
+#book-actions a {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#edit-link {
+    color: #3498db;
+}
+
+#delete-link {
+    color: #e74c3c;
+}

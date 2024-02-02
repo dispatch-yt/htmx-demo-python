@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/htmx.org@1.6.1/dist/htmx.min.js"></script>
+    <title>Dispatch: Books</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='read.css') }}">
+  </head>
+  <body>
+    <h1>Dispatch</h1>
+    <div id='subscribe'>👆 Subscribe to see more videos like this! 🌟🎥 </div>
+
+    <div id="dashboard">
+        <button hx-get="/create" hx-target="#placeholder">📚 Add Book</button>
+        <button hx-get="/read" hx-target="#placeholder">📋 View Books</button>
+    </div>
+
+    <div id="placeholder">
+    </div>
+
+  </body>
+</html>

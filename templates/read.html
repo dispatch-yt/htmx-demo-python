@@ -1,0 +1,18 @@
+<div id="book-list-container">
+    <h2 id="book-list-title">Book List</h2>
+    <ul id="book-list">
+        {% for book in books %}
+            <li id="book-item">
+                <div id="book-details">
+                    <div id="book-info">
+                        <span class="book-title">📖 {{ book.title }} <span class="author">by {{ book.author }}</span></span>
+                    </div>
+                    <div id="book-actions">
+                        <a id="edit-link" hx-get="/update/{{ book.id }}" hx-target="#placeholder">Edit</a>
+                        <a id="delete-link" hx-delete="/delete/{{ book.id }}" hx-target="#placeholder" hx-confirm="Are you sure?">Delete</a>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

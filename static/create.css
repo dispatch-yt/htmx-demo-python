@@ -1,0 +1,37 @@
+form {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form h2 {
+    text-align: center;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 160px;
+}
+
+.input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
